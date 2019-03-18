@@ -6,14 +6,14 @@ Monitor web scraper that is grabing informations rendered. Script also send info
 
 <h5>Quickstart</h5>
 <br>
-<b>Work in Python 3.7.0</b>
+<b>Work in Python 3.7.0</b><br>
 If you want to try funtionallity of script, go a head all what you have to do go to script directory and create .env file with variable: 
-
-SMTP_PORT - port of your smtp mail 
-SMTP_SERVER - smtp server of your mail 
-EMAIL_ADRESS - your email adress which will send mails 
-EMAIL_PASSWORD -  password to email which will send mails
- 
+<br><br>
+SMTP_PORT - port of your smtp mail <br>
+SMTP_SERVER - smtp server of your mail <br>
+EMAIL_ADRESS - your email adress which will send mails <br>
+EMAIL_PASSWORD -  password to email which will send mails<br>
+ <br>
  then open terminal in python cript directory and type
- >>> pip install -r requirements
- >>> python pracuj_pl.py
+ >>> pip install -r requirements<br>
+ >>> python pracuj_pl.py<br>
