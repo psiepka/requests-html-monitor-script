@@ -9,6 +9,14 @@ import time
 load_dotenv()
 
 def senf_offer_on_mail(search_name, receiver_emails, dictonary_with_offers):
+    """Function whch send mail with information about offer on receiver_emails.
+
+    Arguments:
+        search_name {str} -- searching keyword which scripts send get requests
+        receiver_emails {list} - list with multi or single email adress
+        dictonary_with_offers {dict} - dictonary which contain information about new offers
+        list_offers {} -- list which contain existing on page offers
+    """
     port = int(os.environ.get('SMTP_PORT'))
     smtp_server = os.environ.get('SMTP_SERVER')
     sender_email = os.environ.get('EMAIL_ADRESS')
@@ -66,45 +74,3 @@ def senf_offer_on_mail(search_name, receiver_emails, dictonary_with_offers):
         with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
-
-# d = {
-#     'title': 'Junior ściemniacz M E G A developer',
-#     'company': 'Firma Nowy KRZAK',
-#     'date': '17 marca 1995',
-#     'link':'google.com',
-# }
-
-# d_list1 =  {}
-# for i in range(3):
-#     d_list1[i] = d
-
-
-# d_list2 =  {}
-# for i in range(2):
-#     d_list2[i] = d
-
-
-# d_list3 =  {}
-# for i in range(1):
-#     d_list3[i] = d
-
-# t1 = time.perf_counter()
-
-# print()
-# print('0')
-# print()
-# senf_offer_on_mail('python', "patrykeo001@gmail.com", d_list1)
-# print()
-# print('1')
-# print()
-# senf_offer_on_mail('python', "patrykeo001@gmail.com", d_list2)
-# print()
-# print('2')
-# print()
-# senf_offer_on_mail('python', "patrykeo001@gmail.com", d_list3)
-# print()
-# print('3')
-# print()
-# t2 = time.perf_counter()
-
-# print(f'zajeło to {t2-t1} sec')
