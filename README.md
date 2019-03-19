@@ -17,3 +17,10 @@ EMAIL_PASSWORD -  password to email which will send mails<br>
  then open terminal in python cript directory and type
  >>> pip install -r requirements<br>
  >>> python pracuj_pl.py<br>
+ <br><br>
+ <h6>Preview</h6>
+<p>Terminal view :</p>
+ <img src="img/cmd.PNG" alt="terminal view">
+ <br><br>
+<p>Mail messeges :</p>
+ <img src="img/mail.PNG" alt="terminal view">

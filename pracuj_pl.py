@@ -110,22 +110,21 @@ def check_offers(list_offers, seach_name):
                 return new_offers
         return new_offers
 
-
+# app command to start
 
 print('Welcome to monitor pracuj.pl script')
+
 search_name = input('Please type search keyword :\n-')
 if not search_name:
     search_name = input('Please type search keyword :\n-')
+
 receiver_emails = input('Please type reciver mail :\n-')
 if not receiver_emails:
     receiver_emails = input('Please type reciver mail :\n-')
 
 print(f'\nNew offers will be send to {receiver_emails} ')
 
-
 list_of_titles = collect_offers(search_name)
-
-list_of_titles = list_of_titles[3:]
 
 numbers_of_new_offers = 0
 print(f'Scirpt start to monitor new offers on pracuj.pl with keyword {search_name}')
