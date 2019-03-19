@@ -14,7 +14,7 @@ SMTP_SERVER - smtp server of your mail <br>
 EMAIL_ADRESS - your email adress which will send mails <br>
 EMAIL_PASSWORD -  password to email which will send mails<br>
  <br>
- then open terminal in python cript directory and type
+ then open terminal in python cript directory and type<br>
  >>> pip install -r requirements<br>
  >>> python pracuj_pl.py<br>
  <br><br>
